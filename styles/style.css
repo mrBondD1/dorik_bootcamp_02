@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  padding: 38px 45px;
+}
+
+header nav svg{
+   font-size: 30px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+header nav svg:hover{
+        transform: skew(-30deg);
+}
+
+header .mainHeader {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  padding-top: 40px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+.postDate {
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #888888;
+  padding-bottom: 40px;
+}
+
+.blogImage {
+  padding-bottom: 40px;
+}
+
+.blogContent {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 36px;
+  padding-bottom: 50px;
+}
+
+main footer {
+  padding-top: 18px;
+}
+
+main footer i {
+  font-size: 21px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  list-style: none;
+  color: #000;
+  transition: 0.4s;
+}
+
+main footer i:hover{
+    transform: scale(1.08);
+    animation:chromaShadowMove 7500ms ease infinite;
+}
+
+.commentSection {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commentSection h4 {
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.commentSection input {
+  width: 880px;
+  height: 127px;
+  margin-top: 15px;
+  margin-bottom: 21px;
+  background-color: #f5f5f5;
+  border: 1px solid #d0d0d0;
+}
+
+.commentSection button {
+  font-size: 14px;
+  line-height: 19.07px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  padding: 10px 40px;
+  background-color: #555555;
+  border-radius: 5px;
+  color: #fff;
+  align-self: flex-end;
+  transition: 0.4s;
+  border: none;
+}
+
+.commentSection button:hover{
+    background-color: rgb(37, 166, 184);
+}
+
+.commentSection footer {
+  margin-top: 80px;
+}
+
+.comments {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comments img {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.comments img:hover{
+    animation:chromaShadowMove 7500ms ease infinite;
+}
+
+
+.commentText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #eeeeee;
+  padding: 15px;
+}
+
+.commentDate {
+  color: #888888;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.similarPostSection {
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.similarPostSection h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.similarPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.similarPosts article {
+  flex: 0 1 calc(33.33% - 18px);
+  margin-top: 17px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.similarPosts article:hover{
+    transform: scale(1.09);
+}
+
+.similarPosts article h5 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  padding-top: 15px;
+}
+
+.blogFooter {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #888888;
+  margin-top: 41px;
+  margin-bottom: 100px;
+}
+
+
+@keyframes chromaShadowMove
+{ 
+    0% {box-shadow: -12px 4px 0px rgba(255, 2, 48, 0.25), 12px -4px 0px rgba(32, 210, 245, 0.25), -6px 4px 0px rgba(255, 211, 34, 0.25), 6px -4px 0px rgba(32, 75, 245, 0.25);}
+    33% {box-shadow: 4px 6px 0px rgba(255, 2, 162, 0.25), -4px -6px 0px rgba(32, 210, 245, 0.25), 6px 3px 0px rgba(178, 255, 34, 0.25), -4px -3px 0px rgba(32, 75, 245, 0.25);}
+    66% {box-shadow: 12px -6px 0px rgba(255, 2, 48, 0.25), -12px 6px 0px rgba(32, 210, 245, 0.25), 6px 3px 0px rgba(255, 211, 34, 0.25), -6px 3px 0px rgba(32, 75, 245, 0.25);}
+    100% {box-shadow: -12px 4px 0px rgba(255, 2, 48, 0.25), 12px -4px 0px rgba(32, 210, 245, 0.25), -6px 4px 0px rgba(255, 211, 34, 0.25), 6px -4px 0px rgba(32, 75, 245, 0.25);}
+}
+
+
